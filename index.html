@@ -101,19 +101,41 @@
         <h1>Контакты</h1>
         <h2>Мы всегда на связи!</h2>
     </div>
-
     <div class="row">
-        <div class="col-sm-6">
-            <p>Главная</p> <a href="">Контакты</a>
+        <div class="col-sm-6 middle-contact">
+            <p>Главная &#62; <a href="">Контакты</a></p>
             <h3>Свяжитесь с нами любым удобным способом:</h3>
-                <p>Оптовый отдел: +375-29-391-91-28</p>
-                <p>Телефон для связи в России: +375-29-391-91-28</p>
-                <p>autostrong-minsk</p>
-                <p>autostrong@yandex.ru</p>
+                <p><img src="images/ic-tel.png">Оптовый отдел: +375-29-391-91-28</p>
+                <p><img src="images/ic-tel.png">Телефон для связи в России: +375-29-391-91-28</p>
+                <p><img src="images/ic-skype.png">autostrong-minsk</p>
+                <p><img src="images/ic-mail.png">autostrong@yandex.ru</p>
+            <h3>Информационное сотрудничество:</h3>
+                <p><img src="images/ic-tel.png">+375 29 333 33 33 (Velcom)</p>
+            <h3>Оптовое сотрудничество:</h3>
+                <p><img src="images/ic-tel.png">+375 29 333 33 33 (Velcom)</p>
         </div>
-        <div class="col-sm-6">вторая часть</div>
+        <div class="col-sm-6">
+            <div class="question">
+                <div>
+                    <h2>Есть вопросы или предложения?</h2>
+                    <h3>Пишите нам в любое время!</h3>
+                    <input type="text" name="name" placeholder="Ваше имя">
+                    <input type="text" name="mail" placeholder="Ваш емаил*">
+                    <input type="tel" name="tel" placeholder="Ваш номер телефона">
+                    <input class="quest-massage" type="text" name="textarea" placeholder="Ваше сообщение">
+                    <button type="button" class="btn btn-warning submit">Отправить</button>
+                </div>
+            </div>
+        </div>
     </div>
 
+    <div class="adress">
+        <div class="row">
+            <div class="col-md-4">1</div>
+            <div class="col-md-4">2</div>
+            <div class="col-md-4">3</div>
+        </div>
+    </div>
 </div><!-- .container -->
 
 
@@ -131,31 +153,16 @@
   <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
      aria-hidden="true">
     <div class="modal-dialog modal-lg">
-        <div class="modal-content modal-content-all">
-            <div class="modal-header">
+        <div class="question modal-quest">
+            <div>
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h2><span class="modal-green-title">Заказать ёлочку</span></h2>
-            </div>
-            <div class="modal-body">
-                <div class="modal-text-all">
-                    <div>
-                        <p>Меня зовут:</p>
-                        <input type="text" class="modal-textarea-all modal-textarea-all" name="name" placeholder="Введите ваше имя">
-                    </div>
-                    <div>
-                        <p>Мой контактный телефон:</p>
-                        <input type="tel" class="modal-textarea-all" name="" placeholder="Введите ваш номер телефона">
-                    </div>
-                </div>
-                <div class="modal-item">
-                    <p class="modal-text-all">Оставтье координаты и мы с вами свяжемся!</p>
-                </div>
-                <div class="modal-buttons-all">
-                    <button type="button" class=" modal-but-cancel" data-dismiss="modal" aria-hidden="true">
-                        Отмена
-                    </button>
-                    <button type="button" class=" modal-but-submit" value="">Отправить</button>
-                </div>
+                <h2>Есть вопросы или предложения?</h2>
+                <h3>Пишите нам в любое время!</h3>
+                <input type="text" name="name" placeholder="Ваше имя">
+                <input type="text" name="mail" placeholder="Ваш емаил*">
+                <input type="text" name="tel" placeholder="Ваш номер телефона">
+                 <input class="quest-massage" type="text" name="name" placeholder="Ваше сообщение">
+                <button type="button" class="btn btn-warning submit">Отправить</button>
             </div>
         </div>
     </div>
