@@ -1,19 +1,18 @@
-
-
-
 * {
     margin: 0;
     padding: 0; }
-
-.container {
-
-	}
-
-
-
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin-bottom: 240px !important;
+}
 /* HEADER */
-~.header {
+.header {
     position: fixed;
+    width: 100%;
+    background: #ffe;
     z-index: 999;
 }
 
@@ -49,13 +48,6 @@
 
 }
 
-~@media (max-width:768px) {
-.head-dost, .head-tel {
-    padding: 0px 0px; 
-}
-
-}
-
 .head-serch {
     color: white;
 }
@@ -80,11 +72,38 @@
     font-weight: 700;
     background: white;
 }
+
+@media (max-width:1200px) {
+.header-middle {
+    font-size: 13px;
+}
+.header-middle img {
+    display: none;
+}
+
+}
+
 .logo {
     color: #000;
     font-size: 28px;
 }
 
+@media (max-width:992px) {
+    .logo {
+    font-size: 20px;
+    line-height: 2;
+    text-align: center;
+}
+
+}
+
+~@media (max-width:768px) {
+    .logo {
+    line-height: 2;
+    text-align: center;
+}
+
+}
 
 .header-down {
     height: 40px;
@@ -97,10 +116,10 @@
     height: 40px;
     padding: 10px 0;
 }
-.nav div:first-child{
+.nav-head div:first-child{
     border-left: 1px #4792c2 solid;
 }
-.nav div:last-child{
+.nav-head div:last-child{
     border-right: 0;
     font-size: 18px;
     font-weight: 700;
@@ -120,6 +139,7 @@
     height: 330px;
     margin-right: -110px;
     margin-left: -110px;
+    margin-top: 160px;
 }
 
 .slider h1 {
@@ -156,11 +176,12 @@
     margin: 10px 0 10px;
 }
 
-
+.middle-cont-last {
+    margin-bottom: 15%!important;
+}
 
 /*   question       */
 .question {
-    width: 570px;
     box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     background-color: #2c3e50;
@@ -214,45 +235,82 @@
 /*      adress      */
 .adress {
     background-color: #eaecee;
-}    
+    height: 380px;
+} 
 
+.adress h3 {
+    color: #2c3e50;
+    font-family: "Roboto Slab";
+    font-weight: 700;
+    margin-top: 15%;
+}
+
+.adress img {
+    margin-right: 5px;
+    float: left;
+}
+
+.adress p {
+    padding: 0 0 0 30px;
+    font-family: Roboto;
+    font-weight: 500;
+    line-height: 24px;
+}
 /*      /adress      */
 
+~.map-inner + ymaps{
+    width: inherit;
+}
 
 
-/* попап */
+
+/*      попап       */
 .modal-quest {
     margin: auto;
     height: 100%;
 }
 
+/*      footer       */
+.footer {
+    height: 240px;
+    background-color: #2c3e50;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
 
 
+/*      /footer       */
+
+.down {
+    height: 240px;
+}
+
+.logo-down {
+    border-bottom: 1px #485867 solid;
+    color: #a0a7af;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 5px 15px;
+    padding: 20px 0;
+}
 
 
+.nav-down div {
+    border: none;
+    margin: 25px 0;
+}
 
+.contacts-down {
+    border-top: 1px #485867 solid;
+    margin: 0 15px;
+    padding: 20px 0;
+}
+.contacts-down img {
+    padding: 0 10px;
+}
 
-
-
-
-/*
-    <div class="header-btn">
-        <button class="head-btn" data-toggle="modal" data-target=".bs-example-modal-lg" type="submit">
-        Заказать звонок
-        </button>
-    </div>
-
-
-
-<div class="container">
-    <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=QSHkItkuJyBKKfZczcC67i_LEVkLnVDx&amp;width=1140&amp;height=200&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
-        </div>
-    </div><!-- .row -->
-</div><!-- .container -->
-
-
-
-
- */
