@@ -8,6 +8,10 @@ html {
 body {
     margin-bottom: 240px !important;
 }
+
+.container {
+    min-width: 800px;
+}
 /* HEADER */
 .header {
     position: fixed;
@@ -42,9 +46,6 @@ body {
 .header-up img {
     display: none;
 }
-.head-dost, .head-tel {
-    padding: 0px 0px; 
-}
 
 }
 
@@ -75,7 +76,7 @@ body {
 
 @media (max-width:1200px) {
 .header-middle {
-    font-size: 13px;
+    font-size: 12px;
 }
 .header-middle img {
     display: none;
@@ -89,18 +90,8 @@ body {
 }
 
 @media (max-width:992px) {
-    .logo {
+.logo {
     font-size: 20px;
-    line-height: 2;
-    text-align: center;
-}
-
-}
-
-~@media (max-width:768px) {
-    .logo {
-    line-height: 2;
-    text-align: center;
 }
 
 }
@@ -126,12 +117,29 @@ body {
     padding: 7px 0;
 }
 
+@media (max-width:992px) {
+.nav-head div:last-child {
+    padding: 7px 7px;
+}
+.nav-head div img:last-child {
+    display: none;
+}
+
+}
+
+
 .nav a{
     color: #f9f9f9;
     font-family: Roboto;
     text-transform: uppercase;
 }
-/*   /HEADER  */
+
+@media (max-width:992px) {
+.nav a {
+    font-size: 10px;
+}
+
+}
 
 /*   slider  */
 .slider {
@@ -149,7 +157,7 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     margin: 0;
-    padding-top: 8%;
+    padding-top: 100px;
 }
 
 .slider h2 {
@@ -157,16 +165,22 @@ body {
     font-family: Roboto;
 }
 
-
 /*   /slider  */
 
 .middle-contact h3 {
-    width: 65%;
     color: #2c3e50;
     font-family: "Roboto Slab";
     font-weight: 700;
     margin-top: 8%;
 }
+
+@media (max-width:768px) {
+.middle-contact  {
+    margin-left: 8%;
+}
+
+}
+
 
 .middle-contact img {
     margin-right: 5px;
@@ -201,7 +215,7 @@ body {
     margin: 20px 0;
 }
 .question>div{
-    padding: 20px 50px;
+    padding: 3% 8%;
 }
 .question input{
     font-size: inherit;
@@ -227,8 +241,6 @@ body {
     text-transform: uppercase;
     padding: 6px 30px;
 }
-/*   /question       */
-
 
 
 
@@ -236,6 +248,7 @@ body {
 .adress {
     background-color: #eaecee;
     height: 380px;
+    min-width: 800px;
 } 
 
 .adress h3 {
@@ -256,15 +269,14 @@ body {
     font-weight: 500;
     line-height: 24px;
 }
-/*      /adress      */
 
-~.map-inner + ymaps{
-    width: inherit;
+/*      map      */
+
+.map {
+    height: 400px;
 }
 
-
-
-/*      попап       */
+/*      modal       */
 .modal-quest {
     margin: auto;
     height: 100%;
@@ -280,9 +292,8 @@ body {
     position: absolute;
     bottom: 0;
     width: 100%;
+    min-width: 800px;
 }
-
-
 /*      /footer       */
 
 .down {
@@ -299,7 +310,6 @@ body {
     padding: 20px 0;
 }
 
-
 .nav-down div {
     border: none;
     margin: 25px 0;
@@ -313,4 +323,3 @@ body {
 .contacts-down img {
     padding: 0 10px;
 }
-
