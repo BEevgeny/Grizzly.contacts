@@ -16,7 +16,6 @@ body {
 .header {
     position: fixed;
     width: 100%;
-    background: #ffe;
     z-index: 999;
 }
 
@@ -148,6 +147,18 @@ body {
     margin-right: -110px;
     margin-left: -110px;
     margin-top: 160px;
+}
+
+@media (max-width:992px) {
+.slider {
+    margin-right: -50px;
+}
+}
+
+@media (max-width:768px) {
+.slider {
+    margin-right: 0px;
+}
 }
 
 .slider h1 {
